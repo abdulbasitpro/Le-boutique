@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #d4af37;
+  --color-gold-light: #f3e5ab;
+  --color-gold-dark: #aa8c2c;
+  
+  --color-navy-light: #003366;
+  --color-navy-dark: #00204a;
+  --color-navy-deep: #001026;
+  
+  --color-brand-blue: #002b5c;
+  --color-brand-teal: #005792;
+  --color-brand-accent: #00bbf9;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* Custom styles for wood wall, scrollbars and maps */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #001026;
+}
+::-webkit-scrollbar-thumb {
+  background: #003366;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+body {
+  background-color: #001026;
+  color: #f3f4f6;
+  overflow-x: hidden;
+}
+
+/* Log round slice accent background helper */
+.wood-slice-bg {
+  background-image: radial-gradient(circle, rgba(139, 90, 43, 0.15) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
